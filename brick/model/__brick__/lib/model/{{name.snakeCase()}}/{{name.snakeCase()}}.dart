@@ -11,11 +11,11 @@ part '{{#snakeCase}}{{name}}{{/snakeCase}}.g.dart';
 class {{#pascalCase}}{{name}}{{/pascalCase}} extends DatabaseEntity {
 
   {{#pascalCase}}{{name}}{{/pascalCase}}({
-    super.id,
-    super.createdAt,
-    super.createdBy,
-    super.updatedAt,
-    super.updatedBy,
+    required super.id,
+    required super.createdAt,
+    required super.createdBy,
+    required super.updatedAt,
+    required super.updatedBy,
     super.deletedAt,
     super.deletedBy,
   });
