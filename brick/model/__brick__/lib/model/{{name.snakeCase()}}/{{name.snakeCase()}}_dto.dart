@@ -1,7 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:bson/bson.dart';
-import 'package:lepsi_restaurace_models/database_entity.dart';
-import 'package:lepsi_restaurace_models/util/misc.dart';
+import 'package:lepsi_restaurace_models/transport_entity.dart';
 
 part '{{#snakeCase}}{{name}}{{/snakeCase}}_dto.g.dart';
 
