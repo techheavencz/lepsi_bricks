@@ -12,5 +12,5 @@ class Fetch{{#pascalCase}}{{name_plural}}{{/pascalCase}}Response extends ApiResp
   Fetch{{#pascalCase}}{{name_plural}}{{/pascalCase}}Response({required this.entities});
 
   factory Fetch{{#pascalCase}}{{name_plural}}{{/pascalCase}}Response.fromJson(Map<String, dynamic> json) => _$Fetch{{#pascalCase}}{{name_plural}}{{/pascalCase}}ResponseFromJson(json);
-  Map<String, dynamic> toJson() => _$Fetch{{#pascalCase}}{{name}}{{/pascalCase}}ResponseToJson(this);
+  Map<String, dynamic> toJson() => _$Fetch{{#pascalCase}}{{name_plural}}{{/pascalCase}}ResponseToJson(this);
 }
