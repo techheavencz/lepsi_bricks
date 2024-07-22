@@ -1,14 +1,14 @@
 import 'package:json_annotation/json_annotation.dart';
 import 'package:lepsi_restaurace_models/http/request/api_request_update.dart';
-import 'package:lepsi_restaurace_models/model/{{#snakeCase}}{{name}}{{/snakeCase}}/{{#snakeCase}}{{name}}{{/snakeCase}}.dart';
+import 'package:lepsi_restaurace_models/model/{{#snakeCase}}{{name}}{{/snakeCase}}/{{#snakeCase}}{{name}}{{/snakeCase}}_dto.dart';
 
 
 part 'update_{{#snakeCase}}{{name}}{{/snakeCase}}_request.g.dart';
 
 @JsonSerializable(explicitToJson: true)
-class Update{{#pascalCase}}{{name}}{{/pascalCase}}Request extends ApiRequestUpdate<{{#pascalCase}}{{name}}{{/pascalCase}}> {
+class Update{{#pascalCase}}{{name}}{{/pascalCase}}Request extends ApiRequestUpdate<{{#pascalCase}}{{name}}{{/pascalCase}}Dto> {
 
-  Update{{#pascalCase}}{{name}}{{/pascalCase}}Request({{#pascalCase}}{{name}}{{/pascalCase}} entity):
+  Update{{#pascalCase}}{{name}}{{/pascalCase}}Request({{#pascalCase}}{{name}}{{/pascalCase}}Dto entity):
         super(entity: entity);
 
   factory Update{{#pascalCase}}{{name}}{{/pascalCase}}Request.fromJson(Map<String, dynamic> json) => _$Update{{#pascalCase}}{{name}}{{/pascalCase}}RequestFromJson(json);
