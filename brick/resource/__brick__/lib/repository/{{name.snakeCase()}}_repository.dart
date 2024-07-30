@@ -15,4 +15,7 @@ class {{#pascalCase}}{{name}}{{/pascalCase}}Repository extends CrudRepository<
 
   @override
   {{#pascalCase}}{{name}}{{/pascalCase}} resourceFromJson(Map<String, dynamic> json) => {{#pascalCase}}{{name}}{{/pascalCase}}.fromJson(json);
+
+  @override
+  {{#pascalCase}}{{name}}{{/pascalCase}}Dto transportFromJson(Map<String, dynamic> json) => {{#pascalCase}}{{name}}{{/pascalCase}}Dto.fromJson(json);
 }
