@@ -18,7 +18,8 @@ import 'package:lepsi_restaurace_models/model/{{#snakeCase}}{{name}}{{/snakeCase
 /// {{#pascalCase}}{{name}}{{/pascalCase}}Controller handles HTTP requests concerning product categories
 class {{#pascalCase}}{{name}}{{/pascalCase}}Controller extends CrudController<
     {{#pascalCase}}{{name}}{{/pascalCase}}Repository,
-    {{#pascalCase}}{{name}}{{/pascalCase}}
+    {{#pascalCase}}{{name}}{{/pascalCase}},
+    {{#pascalCase}}{{name}}{{/pascalCase}}Dto,
 >{
 
   /// Construct
@@ -33,7 +34,7 @@ class {{#pascalCase}}{{name}}{{/pascalCase}}Controller extends CrudController<
 
   // ------------- CREATE -------------
   @override
-  ApiRequestCreate<{{#pascalCase}}{{name}}{{/pascalCase}}> requestDataCreate(Map<String, dynamic> map) =>
+  ApiRequestCreate<{{#pascalCase}}{{name}}{{/pascalCase}}Dto> requestDataCreate(Map<String, dynamic> map) =>
       Create{{#pascalCase}}{{name}}{{/pascalCase}}Request.fromJson(map);
   @override
   ApiResponseCreate responseDataCreate(List<{{#pascalCase}}{{name}}{{/pascalCase}}> entities) =>
@@ -51,7 +52,7 @@ class {{#pascalCase}}{{name}}{{/pascalCase}}Controller extends CrudController<
 
   // ------------- UPDATE -------------
   @override
-  ApiRequestUpdate<{{#pascalCase}}{{name}}{{/pascalCase}}> requestDataUpdate(Map<String, dynamic> map) =>
+  ApiRequestUpdate<{{#pascalCase}}{{name}}{{/pascalCase}}Dto> requestDataUpdate(Map<String, dynamic> map) =>
       Update{{#pascalCase}}{{name}}{{/pascalCase}}Request.fromJson(map);
   @override
   ApiResponse responseDataUpdate({{#pascalCase}}{{name}}{{/pascalCase}} entity, {required bool isSuccess}) =>
