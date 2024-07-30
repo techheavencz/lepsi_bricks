@@ -9,6 +9,7 @@ import 'package:lepsi_restaurace_models/http/response/api_response_create.dart';
 import 'package:lepsi_restaurace_models/http/response/api_response_delete.dart';
 import 'package:lepsi_restaurace_models/http/response/api_response_update.dart';
 import 'package:lepsi_restaurace_models/model/{{#snakeCase}}{{name}}{{/snakeCase}}/{{#snakeCase}}{{name}}{{/snakeCase}}.dart';
+import 'package:lepsi_restaurace_models/model/{{#snakeCase}}{{name}}{{/snakeCase}}/{{#snakeCase}}{{name}}{{/snakeCase}}_dto.dart';
 import 'package:lepsi_restaurace_models/model/{{#snakeCase}}{{name}}{{/snakeCase}}/requests/create_{{#snakeCase}}{{name}}{{/snakeCase}}_request.dart';
 import 'package:lepsi_restaurace_models/model/{{#snakeCase}}{{name}}{{/snakeCase}}/requests/update_{{#snakeCase}}{{name}}{{/snakeCase}}_request.dart';
 import 'package:lepsi_restaurace_models/model/{{#snakeCase}}{{name}}{{/snakeCase}}/responses/create_{{#snakeCase}}{{name}}{{/snakeCase}}_response.dart';
@@ -19,7 +20,7 @@ import 'package:lepsi_restaurace_models/model/{{#snakeCase}}{{name}}{{/snakeCase
 class {{#pascalCase}}{{name}}{{/pascalCase}}Controller extends CrudController<
     {{#pascalCase}}{{name}}{{/pascalCase}}Repository,
     {{#pascalCase}}{{name}}{{/pascalCase}},
-    {{#pascalCase}}{{name}}{{/pascalCase}}Dto,
+    {{#pascalCase}}{{name}}{{/pascalCase}}Dto
 >{
 
   /// Construct

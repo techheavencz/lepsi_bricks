@@ -1,6 +1,7 @@
 import 'package:lepsi_restaurace_api/repository/crud_repository.dart';
 import 'package:lepsi_restaurace_api/services/database_service.dart';
 import 'package:lepsi_restaurace_models/model/{{#snakeCase}}{{name}}{{/snakeCase}}/{{#snakeCase}}{{name}}{{/snakeCase}}.dart';
+import 'package:lepsi_restaurace_models/model/{{#snakeCase}}{{name}}{{/snakeCase}}/{{#snakeCase}}{{name}}{{/snakeCase}}_dto.dart';
 
 /// BusinessRepository
 class {{#pascalCase}}{{name}}{{/pascalCase}}Repository extends CrudRepository<
